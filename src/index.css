@@ -1,5 +1,28 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --main-title: saddlebrown;
+  --main-title-bkg: #edc7b7;
+  --menu-bkg: #ac3b61;
+  --mainbtn: #123c69;
+  --mainbtn-bkg: #bab2b5;
+  --data-area-bkg: #eee2dc;
+
+  --aside: #edc7b7;
+  --label: darkblue;
+  --data-title: black;
+  --data-title-bkg: #bab2b5;
+  --button-bkg: #ac3b61;
+  --button: #bab2b5;
+  --aside-margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

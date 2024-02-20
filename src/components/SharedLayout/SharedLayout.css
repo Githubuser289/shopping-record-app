@@ -1,0 +1,13 @@
+.h1-title {
+    font-size: 24px;
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+
+}
+
+.title-image {
+    height: 40px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
