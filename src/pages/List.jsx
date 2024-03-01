@@ -23,12 +23,7 @@ export const List = () => {
       .finally(setIsLoading(false));
   }, []);
 
-  async function updataAlldata() {
-    const response = await dataService.updateData(alldata);
-    console.log(response);
-    return response;
-  }
-
+  console.log(alldata);
   return (
     <main>
       <p></p>
