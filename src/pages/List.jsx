@@ -1,40 +1,29 @@
-import { useEffect, useState } from 'react';
-import dataService from '../service/dataService';
+import { useSelector } from 'react-redux';
+import {
+  selectArticles,
+  selectCategories,
+  selectShops,
+  selectUnits,
+} from '../redux/selectors';
 
 export const List = () => {
-  const [alldata, setAlldata] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const articles = useSelector(selectArticles);
+  const categories = useSelector(selectCategories);
+  const shops = useSelector(selectShops);
+  const units = useSelector(selectUnits);
 
-  useEffect(() => {
-    async function getAllData() {
-      const response = await dataService.getData();
-      setAlldata(response);
-      console.log(response);
+  console.log('articles=', articles);
+  console.log('categories=', categories);
+  console.log('shops=', shops);
+  console.log('units=', units);
 
-      // const response = await dataService.updateData(alldata)
-      return response;
-    }
-
-    setIsLoading(true);
-    getAllData()
-      .catch(error => {
-        console.error(error);
-      })
-      .finally(setIsLoading(false));
-  }, []);
-
-  console.log(alldata);
   return (
     <main>
       <p></p>
       <h1>Introducere lista</h1>
       <p>la stilizare sa folosesc culorile pregatite</p>
       <p>*****</p>
-      <p>
-        AR TREBUI SA LUCREZ CU DATELE DINTR-UN FISIER LOCAL ---VEZI CODUL SCRIS
-        DE SERGIU sau INET-ul
-      </p>
-      {isLoading && <p>data processing...</p>}
+      <p>LUCREZ CU DATELE DINTR-UN FISIER LOCAL ---</p>
     </main>
   );
 };

@@ -1,18 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { tutorsReducer } from './slices/tutorsSlice';
+import { datasReducer } from './datasSlice';
 
 /**
  * OBIECTUL DE STATE VA FI:
  * {
- * cities: [...lista de orase],
- * faculties: [...lista de facultati],
- * facultiesSearchTerm: "",
- * tutors: [...lista de tutori]
+ * articles: [{name: '', category: ''}, {name: '', category: ''}],
+ * categories: ['', '', ''],
+ * shops: ['', '', ''],
+ * units: ['', '', ''],
  * }
  */
 
 export const store = configureStore({
   reducer: {
-    tasks: tutorsReducer,
+    datas: datasReducer,
   },
 });
