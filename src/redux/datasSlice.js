@@ -6,6 +6,7 @@ const initialState = {
   categories: [],
   shops: [],
   units: [],
+  shopList: [],
   isLoading: false,
   error: null,
 };
@@ -21,6 +22,17 @@ const handleRejected = (state, action) => {
 const datasSlice = createSlice({
   name: 'datas',
   initialState: initialState,
+  reducers: {
+    addItem: {
+      reducer(state, action) {
+        state.shopList.push(action.payload);
+      },
+    },
+    deleteItem(state, action) {
+      const index = action.payload;
+      state.shopList.splice(index, 1);
+    },
+  },
   extraReducers: builder => {
     builder
       .addCase(fetchDatas.pending, handlePending)
@@ -57,4 +69,5 @@ const datasSlice = createSlice({
   },
 });
 
+export const { addItem, deleteItem } = datasSlice.actions;
 export const datasReducer = datasSlice.reducer;

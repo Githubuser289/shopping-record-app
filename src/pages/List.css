@@ -1,0 +1,24 @@
+main {
+    display: flex;
+}
+
+.shoplist {
+    width: 100%;
+}
+
+.shoplist div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.functions {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+li {
+    list-style-type: none;
+}

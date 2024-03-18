@@ -1,0 +1,11 @@
+* refac in index.js StrictMode (acum e comentariu)
+
+* in operations.js si datasSlice.js scriu functii pentru 
+  crearea, stergerea si actualizarea datelor
+Poate reusesc sa o fac cu axios din localhost:3000...
+
+* fundalul listelor de optiuni sa fie identic cu al div-ului in care se afla
+
+* sa trimita lista de cumparaturi prin email
+
+* 

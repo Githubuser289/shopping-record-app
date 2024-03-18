@@ -8,6 +8,13 @@ import { datasReducer } from './datasSlice';
  * categories: ['', '', ''],
  * shops: ['', '', ''],
  * units: ['', '', ''],
+ * shopList: [{
+ *    name: '',
+ *    category: '',
+ *    quantity: ,
+ *    unit: ,
+ *    shopName: '',
+ * }],
  * }
  */
 

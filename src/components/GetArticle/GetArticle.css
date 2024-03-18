@@ -1,0 +1,43 @@
+#articleInput {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0 15px;
+    background-color: var(--aside);
+}
+
+.label {
+    margin-top: var(--aside-margin-top);
+    color: var(--label);
+}
+
+#articleInput div {
+    margin-top: var(--aside-margin-top);
+}
+
+#articleInput input,
+select {
+    background-color: var(--data-area-bkg);
+}
+
+/* #article {
+    width: 140px;
+} */
+#artList {
+    margin: 0 10px;
+    margin-top: calc(var(--aside-margin-top)/2);
+}
+
+#quant {
+    width: 50px;
+}
+
+#articleInput button {
+    margin: var(--aside-margin-top) 0 0 0;
+    background-color: var(--button-bkg);
+    color: var(--button);
+}
+
+#catList {
+    margin: 0 10px;
+}

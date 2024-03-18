@@ -6,6 +6,8 @@ export const selectShops = state => state.datas.shops;
 
 export const selectUnits = state => state.datas.units;
 
+export const selectShopList = state => state.datas.shopList;
+
 export const selectIsLoading = state => state.datas.isLoading;
 
 export const selectError = state => state.datas.error;
