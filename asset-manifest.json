@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shopping-record-app/static/css/main.52141470.css",
-    "main.js": "/shopping-record-app/static/js/main.681f0228.js",
+    "main.css": "/shopping-record-app/static/css/main.6bf74976.css",
+    "main.js": "/shopping-record-app/static/js/main.08f147c3.js",
     "static/media/shopping-cart1.png": "/shopping-record-app/static/media/shopping-cart1.0536a050c115dd91665c.png",
     "index.html": "/shopping-record-app/index.html",
-    "main.52141470.css.map": "/shopping-record-app/static/css/main.52141470.css.map",
-    "main.681f0228.js.map": "/shopping-record-app/static/js/main.681f0228.js.map"
+    "main.6bf74976.css.map": "/shopping-record-app/static/css/main.6bf74976.css.map",
+    "main.08f147c3.js.map": "/shopping-record-app/static/js/main.08f147c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.52141470.css",
-    "static/js/main.681f0228.js"
+    "static/css/main.6bf74976.css",
+    "static/js/main.08f147c3.js"
   ]
 }
