@@ -7,6 +7,14 @@ const initialState = {
   shops: [],
   units: [],
   shopList: [],
+  receipt: {
+    items: [],
+    shop: '',
+    date: null,
+    //temporary values
+    file: null,
+    content: '',
+  },
   isLoading: false,
   error: null,
 };
@@ -31,6 +39,27 @@ const datasSlice = createSlice({
     deleteItem(state, action) {
       const index = action.payload;
       state.shopList.splice(index, 1);
+    },
+    addReceiptItem: {
+      reducer(state, action) {
+        state.receipt.items.push(action.payload);
+      },
+    },
+    setDate(state, action) {
+      state.receipt.date = action.payload;
+    },
+    setShopName(state, action) {
+      state.receipt.shop = action.payload;
+    },
+    setNewReceipt(state) {
+      state.receipt.date = null;
+      state.receipt.shop = '';
+      state.receipt.items = [];
+    },
+
+    // temporary reducers
+    addFileContent(state, action) {
+      state.receipt.content = action.payload;
     },
   },
   extraReducers: builder => {
@@ -69,5 +98,14 @@ const datasSlice = createSlice({
   },
 });
 
-export const { addItem, deleteItem } = datasSlice.actions;
+export const {
+  addItem,
+  deleteItem,
+  addReceiptItem,
+  setDate,
+  setShopName,
+  setNewReceipt,
+  setFile, //temporary
+  addFileContent, //temporary
+} = datasSlice.actions;
 export const datasReducer = datasSlice.reducer;

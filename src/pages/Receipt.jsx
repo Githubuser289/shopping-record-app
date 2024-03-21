@@ -1,12 +1,12 @@
-import { Outlet } from 'react-router-dom';
+import GetReceipt from '../components/GetReceipt/GetReceipt';
+import ReceiptList from '../components/ReceiptList/ReceiptList';
+import './Receipt.css';
 
 export const Receipt = () => {
   return (
     <main>
-      {/* <h1>Receipt enter</h1> */}
-      <h1>Introducere bon</h1>
-      <p>Aici urmeaza </p>
-      <Outlet />
+      <GetReceipt />
+      <ReceiptList />
     </main>
   );
 };

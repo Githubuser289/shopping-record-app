@@ -1,6 +1,3 @@
-// TO DO:
-// ******define a function to get the articles list filtered by active categories
-
 import { useDispatch, useSelector } from 'react-redux';
 import {
   selectArticles,

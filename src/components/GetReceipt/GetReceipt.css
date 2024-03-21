@@ -1,0 +1,22 @@
+#receiptInput {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0 15px;
+    background-color: var(--aside);
+}
+
+#receiptInput div {
+    margin-top: var(--aside-margin-top);
+}
+
+#receiptInput input,
+select {
+    background-color: var(--data-area-bkg);
+}
+
+#receiptInput button {
+    margin: var(--aside-margin-top) 0 0 0;
+    background-color: var(--button-bkg);
+    color: var(--button);
+}

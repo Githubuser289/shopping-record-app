@@ -15,6 +15,17 @@ import { datasReducer } from './datasSlice';
  *    unit: ,
  *    shopName: '',
  * }],
+ * receipt: {
+ *    items:[{
+ *      name: '',
+ *      quantity: ,
+ *      amount: ,
+ *    }],
+ *    shop: '',
+ *    date: null,
+ * }
+ * to receipt will be added (before saving) the date and the shop
+ *
  * }
  */
 
